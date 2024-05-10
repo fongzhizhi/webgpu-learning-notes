@@ -1,0 +1,20 @@
+{
+	"compilerOptions": {
+		"target": "ESNext",
+		"module": "ESNext",
+		"allowJs": true,
+		"sourceMap": true,
+		"isolatedModules": true,
+		"baseUrl": "dependence",
+		"strict": false,
+		"lib": ["ESNext", "DOM"],
+		"esModuleInterop": true,
+		"moduleResolution": "Node",
+		"forceConsistentCasingInFileNames": true,
+		"typeRoots": ["./node_modules/@webgpu/types", "./node_modules/@types"],
+		"checkJs": false,
+		"outDir": "dist"
+	},
+	"include": ["src/**/*"],
+	"exclude": ["node_modules"]
+}

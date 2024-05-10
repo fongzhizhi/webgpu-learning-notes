@@ -1,0 +1,46 @@
+{	  "name": "webgpu-learning-notes",
+  "version": "1.0.0",
+  "description": "The notes and codes for leaning webgpu",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install",
+    "lint-staged": "lint-staged",
+    "prettier": "prettier src -write --ignore-unknown",
+    "build": "vite build",
+    "server": "node app.router.js",
+    "vite": "vite --open",
+    "dev": "npm-run-all -p server vite"
+  },
+  "lint-staged": {
+    "src": "prettier --write --ignore-unknown" 
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fongzhizhi/webgpu-learning-notes.git"
+  },
+  "keywords": [],
+  "author": "https://github.com/fongzhizhi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fongzhizhi/webgpu-learning-notes/issues"
+  },
+  "homepage": "https://github.com/fongzhizhi/webgpu-learning-notes#readme",
+  "dependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/marked": "^4.0.1",
+    "axios": "^1.6.8",
+    "express": "^4.17.2",
+    "husky": "^7.0.4",
+    "less": "^4.1.2",
+    "lint-staged": "^12.4.1",
+    "marked": "^4.0.5",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.5.1",
+    "typescript": "^4.5.2",
+    "vite": "^2.7.7"
+  },
+  "devDependencies": {
+    "@webgpu/types": "^0.1.40"
+  }
+}
